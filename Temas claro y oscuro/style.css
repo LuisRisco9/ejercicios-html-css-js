@@ -1,0 +1,83 @@
+:root {
+  --bg-color: #fdfdfd;
+  --text-color: #333;
+  --accent-color: #c97c5d;
+  --card-bg: #fff;
+}
+
+.dark-mode {
+  --bg-color: rgba(34, 34, 34);
+  --text-color: #f0f0f0;
+  --accent-color: #e07a5f;
+  --card-bg: #2a2a2a;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: var(--accent-color);
+  color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
+.toggle-btn {
+  background: white;
+  color: var(--accent-color);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.toggle-btn:hover {
+  background: #f0f0f0;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: background 0.3s ease;
+}
+
+h2 {
+  color: var(--accent-color);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: var(--accent-color);
+  color: white;
+  margin-top: 30px;
+}

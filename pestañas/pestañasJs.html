@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Tabs Example</title>
+  <link rel="stylesheet" href="estilosjs.css">
+</head>
+<body>
+  <div class="tabs">
+    <!-- Each button calls the function and passes the tab's ID -->
+    <button class="tab" onclick="openTab('home')">Home</button>
+    <button class="tab" onclick="openTab('about')">About</button>
+    <button class="tab" onclick="openTab('contact')">Contact</button>
+  </div>
+
+  <!-- By default, only "Home" is visible -->
+  <div id="home" class="tab-content">Welcome to the homepage!</div>
+  <div id="about" class="tab-content" style="display:none;">Learn more about us here.</div>
+  <div id="contact" class="tab-content" style="display:none;">Get in touch with us.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
